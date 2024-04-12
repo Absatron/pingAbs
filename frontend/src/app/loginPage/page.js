@@ -27,6 +27,9 @@ export default function Home() {
         body: JSON.stringify(data),
       });
 
+      if (!response.ok) {
+        throw new Error;
+      }
 
       console.log(response);
       const { token } = response.json();
