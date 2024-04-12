@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+.logo {
+    font-size: 3em;
+    user-select: none;
+}
+
+.navigation .btnhome {
+    width: 130px;
+    height: 50px;
+    background: lightgray;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navigation .btnhome:hover {
+    background: darkgray;
+    color: #162938;
+}
+
+.wrapper {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.title {
+    color: rgb(188, 1, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scoreboard {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: lightgray;
+    display: flex;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.header_item {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.player_list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.player {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.3em;
+}
+
+.player_name, .player_score {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+.player:last-child {
+    border-bottom: none;
+}
+
+.btn { 
+    width: 150px;
+    height: 50px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 500;
+    background-color: darkgray;  
+    margin-right: 50px;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+.btn:hover {
+    background-color: lightgray;
+} 
+
+.btn_container {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    height: 100px;
+    padding-top: 40px;
+    margin-left: 25%;
+    /* border: black solid 1px; */
+}
+
+@media screen and (max-width: 1080px) {
+    .logo {
+        position: absolute; 
+        left: 15px;
+    } 
+
+    .navigation .btnhome {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .wrapper {
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 300px;
+    }
+
+    .header_item {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .btn_container {
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    .btn {
+        width: 100px;
+        margin-left: 32px;
+    }
+
+}
